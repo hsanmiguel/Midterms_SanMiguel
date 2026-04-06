@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd midterms_sanmiguel && npm install",
+  "buildCommand": "cd midterms_sanmiguel && npm run build",
+  "outputDirectory": "midterms_sanmiguel/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
