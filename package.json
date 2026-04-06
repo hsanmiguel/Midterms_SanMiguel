@@ -1,0 +1,9 @@
+{
+  "name": "midterms_sm_root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix midterms_sanmiguel run dev",
+    "build": "npm --prefix midterms_sanmiguel run build",
+    "preview": "npm --prefix midterms_sanmiguel run preview"
+  }
+}
