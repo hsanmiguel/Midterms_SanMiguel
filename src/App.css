@@ -1,0 +1,189 @@
+.exam-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px 36px;
+  max-width: 920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page-header {
+  text-align: left;
+  padding: 4px 2px;
+}
+
+.card {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 14px;
+  text-align: left;
+  box-shadow: none;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.version-switch {
+  display: inline-flex;
+  border: 1px solid #d2d2d2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.version-switch button {
+  border: none;
+  background: #f5f5f5;
+  color: #222;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.version-switch button.active {
+  background: #222;
+  color: #fff;
+}
+
+.version-switch button:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: -2px;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: #333;
+}
+
+.toggle input {
+  accent-color: #222;
+}
+
+.endpoint {
+  margin: 10px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.control-grid label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.88rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.control-grid input {
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  color: #1f1f1f;
+  background: #fff;
+}
+
+.control-grid input::placeholder {
+  color: #8c8c8c;
+}
+
+.control-grid input:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: 1px;
+  border-color: #222;
+}
+
+.run-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: #222;
+}
+
+.run-btn:hover {
+  background: #111;
+}
+
+.run-btn:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: 2px;
+}
+
+.json-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+pre {
+  margin: 6px 0 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafafa;
+  overflow-x: auto;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.note {
+  margin-top: 10px;
+  color: #4b4b4b;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 760px) {
+  .exam-page {
+    padding: 14px 10px 20px;
+    gap: 10px;
+  }
+
+  .json-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .control-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .version-switch {
+    width: 100%;
+  }
+
+  .version-switch button {
+    flex: 1;
+  }
+
+  .toggle {
+    width: 100%;
+  }
+}
